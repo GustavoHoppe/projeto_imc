@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+:root {
+
+    --cor1: #101114;
+    --cor2: #1B1D24;
+    --cor3: #1E2129;
+    --cor4: #22252E;
+    --cor5: #252933;
+    --cor6: #14dddd;
+    --cor-fonte: #c2c2c2; 
+}
+
+body {
+    background-color: var(--cor1);
+    color: var(--cor-fonte);
+    
+}
+
+
+.cabecalho{
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.cabecalho__titulo {
+    width: 50%;
+    background: var(--cor2);
+    display: inline-block;
+    padding: 3rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    border-bottom: 3px solid var(--cor6);
+    color: var(--cor-fonte);
+}
+
+.cabecalho__titulo__strong {
+    color: var(--cor6);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif; 
+    background: var(--cor2);
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--cor6);
+}
+
+.container__input {
+    border: none;
+    width: 5rem;
+    margin-bottom: 4rem;
+    background-color: #252933;
+    font-size: 1.3rem;
+    color: var(--cor-fonte);
+}
+
+.container__label {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.container__botao {
+    padding: 0.5rem;
+    background-color: var(--cor5);
+    color: var(--cor6);
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid var(--cor6);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: 0.2s;
+}
+
+.container__botao:hover {
+    color: #0c9191;
+    border-bottom: 2px solid #0c9191;
+}
+
+.peso--abaixo {
+    color: orange;
+}
+
+.peso--normal {
+    color: #14dddd;
+}
+
+.peso--sobrepeso {
+    color: orange;
+}
+
+.peso--obesidade1 {
+    color: rgb(255, 102, 0);
+}
+
+.peso--obesidade2 {
+    color: rgb(255, 51, 0);
+}
+
+.peso--obesidade3 {
+    color: red;
+}
+
+.rodape {
+    text-align: center;
+    padding: 5rem;
+}
+
+.rodape__texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: var(--cor6);
+    transition: .2s;
+}
+
+.rodape__link:hover {
+    color: #0c9191;
+}
+
+@media screen and (max-width:767px) {
+    
+    .cabecalho {
+        width: 100vw;
+        padding: 1rem 0;
+    }
+    
+    .cabecalho__titulo {
+        width: 90%;
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .container__label {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        padding: 5rem 0;
+    }
+
+    .rodape__texto {
+        font-size: 1rem;
+    }
+}

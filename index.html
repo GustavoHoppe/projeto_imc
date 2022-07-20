@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Descubra seu IMC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Descubra seu <strong class="cabecalho__titulo__strong">IMC</strong></h1>
+    </header>
+    <main>
+        <section class="container">
+            
+            <p>
+                <label class="container__label" for="txt_peso">Peso:</label>            
+                <input class="container__input" type="number" name="peso" id="txt_peso"> Kg
+            </p>
+            
+            <p>
+                <label class="container__label" for="txt_altura">Altura:</label>
+                <input class="container__input" type="number" name="altura" id="txt_altura"> m
+            </p>
+
+            <input class="container__botao" type="button" value="Calcular">
+            
+            <div class="container__resposta">
+
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">
+            Criado por <a class="rodape__link" href="https://www.instagram.com/hoppe_94/" target="_blank">&copy; Gustavo Hoppe</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
